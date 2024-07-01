@@ -186,7 +186,7 @@ alloy-transport-ws = { version = "0.1.2", default-features = false }
 
 alloy-dyn-abi = "0.7.3"
 alloy-json-abi = "0.7.3"
-alloy-primitives = { version = "0.7.3", features = ["getrandom", "rand"] }
+alloy-primitives = { git = "https://github.com/gazzua/core", branch = "change-to-over", features = ["getrandom", "rand"] }
 alloy-sol-macro-expander = "0.7.3"
 alloy-sol-macro-input = "0.7.3"
 alloy-sol-types = "0.7.3"
@@ -250,3 +250,7 @@ tower = "0.4"
 tower-http = "0.5"
 # soldeer
 soldeer = "0.2.15"
+
+
+[patch.crates-io]
+alloy-primitives = { git = "https://github.com/gazzua/core", branch = "change-to-over" }
